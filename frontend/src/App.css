@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@layer utilities {
+  .animate-typing {
+    animation: typing 4s steps(40, end) forwards;
+  }
+}
+
+body{
+  background: linear-gradient(135deg, #eef1f2);
+
+}
