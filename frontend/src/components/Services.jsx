@@ -9,7 +9,7 @@ const services = [
   {
     img: "Servining.jpg",
     title: "Serving Robot",
-    desc: "FA serving robot is designed to deliver food or items, often used in restaurants or hospitals to assist with service tasks efficiently.",
+    desc: "A serving robot is designed to deliver food or items, often used in restaurants or hospitals to assist with service tasks efficiently.",
   },
   {
     img: "RECEPTION.webp",
@@ -19,7 +19,7 @@ const services = [
   {
     img: "STEM.jpeg",
     title: "STEM Kit",
-    desc: " ARDUINO starter kit - ELECFREAKS micro:bit starter - kit KIT A STEM kit is an educational tool containing hands-on materials to teach science, technology, engineering, and math through interactive learning.",
+    desc: " Arduino Starter Kit - ELECFREAKS micro:bit Starter Kit A STEM kit is an educational tool containing hands-on materials to teach science, technology, engineering, and math through interactive learning.",
   },
   {
     img: "TEACHER.jpg",
@@ -29,7 +29,7 @@ const services = [
   {
     img: "WEB_DESIGN.avif",
     title: "Web Design",
-    desc: "We Design & Develop Morden, Responsive Website, Including Gallaries, Events & Admin Panels",
+    desc: "We Design & Develop Modern, Responsive Website, Including Galleries, Events & Admin Panels",
   },
 ];
 
