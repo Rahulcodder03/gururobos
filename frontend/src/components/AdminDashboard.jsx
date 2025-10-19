@@ -55,16 +55,34 @@ const AdminDashboard = () => {
   };
 
   // Delete contact
-  const handleDeleteContact = async (id) => {
-    if (!window.confirm('Are you sure you want to delete this contact?')) return;
-    
-    try {
-      await axios.delete(`${API_BASE}/contacts/${id}`);
-      fetchContacts(); // Refresh the list
-    } catch (err) {
-      setError('Failed to delete contact');
+ // Delete contact
+const handleDeleteContact = async (id) => {
+  if (!window.confirm('Are you sure you want to delete this contact?')) return;
+
+  try {
+    setError('');
+    // Axios delete with explicit headers and response handling
+    const response = await axios.delete(`${API_BASE}/contacts/${id}`, {
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem('adminToken')}`,
+      },
+      validateStatus: (status) => status < 500, // prevent axios crash
+    });
+
+    if (response.status === 200 || response.status === 204) {
+      // success
+      setContacts((prev) => prev.filter((c) => c._id !== id));
+    } else if (response.status === 401) {
+      setError('Unauthorized - Please log in again.');
+    } else {
+      setError(response.data?.message || 'Failed to delete contact');
     }
-  };
+  } catch (err) {
+    console.error('Delete error:', err);
+    setError(err.response?.data?.message || 'Failed to delete contact');
+  }
+};
+
 
   // View contact details
   const handleViewContact = async (id) => {
