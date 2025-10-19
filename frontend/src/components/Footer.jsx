@@ -37,7 +37,7 @@ const Footer = () => {
           </ul></div>
       </div>
       <div className="text-center text-gray-400 mt-6">
-        © {new Date().getFullYear()} GURUROBOS — All rights reserved <br/><span>devlop by </span>GURUrobos
+        © {new Date().getFullYear()} GURUROBOS — All rights reserved <br/><span>Developed by </span>GURUROBOS
       </div>
     </footer>
   );
