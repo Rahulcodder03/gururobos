@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="text-center">
           <h4 className="text-xl font-bold">CHANDRA SHEKHAR KUSWAH</h4>
           <p className="text-sm">FOUNDER (GURUROBOS)</p>
-          <small>cskrobotics@gmail.com<br />+91 9806182058</small>
+          <small>cskrobotics7@gmail.com<br />+91 9806182058</small>
         </div>
 
         {/* Co-founder */}
