@@ -13,7 +13,7 @@ export default function Team() {
                             </div>
 
                             <div className='flex flex-col justify-center'>
-                            <h4 className="mt-4 font-semibold text-lg">Chandra shekhar kushwah</h4>
+                            <h4 className="mt-4 font-semibold text-lg">Chandra Shekhar Kushwah</h4>
                             <p className="text-xs text-gray-500">Founder & Data Researcher</p>
                             </div>
                         </div>
@@ -22,7 +22,7 @@ export default function Team() {
                            <img src="rahul.jpeg" alt="team" className="w-35 h-35 rounded-full mx-auto object-cover" />
                             </div>
                             <div className='flex flex-col justify-center'>
-                            <h4 className="mt-4 font-semibold text-lg">Rahul rathore</h4>
+                            <h4 className="mt-4 font-semibold text-lg">Rahul Rathore</h4>
                             <p className="text-xs text-gray-500">Co-Founder & Automation</p>
                             </div>
                             
